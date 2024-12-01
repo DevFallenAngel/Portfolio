@@ -1,0 +1,118 @@
+body {
+    background: #0a192f;
+    color: #5FA7F5;
+    font-family: '__inter_20b187', '__inter_Fallback_20b187', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 45em;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva línea si es necesario */
+}
+
+#cabecera #nav {
+    display: flex;
+    gap: 15px;
+    flex: 1; /* Permite que el contenedor crezca según sea necesario */
+}
+
+#cabecera #nav a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 10px; /* Ajusta el padding */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el contenido desbordante */
+    text-overflow: ellipsis; /* Muestra "..." si el contenido es demasiado largo */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+#cabecera #nav a:hover {
+    color: #00254e; /* Cambia el color de los links y los números al pasar el cursor */
+}
+
+#cabecera #nav a::before {
+    content: '01. ';
+    color: #5FA7F5;
+    font-weight: bold;
+    margin-right: 5px; /* Espacio entre el número y el texto */
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+#cabecera #nav a:nth-child(2)::before {
+    content: '02. ';
+}
+
+#cabecera #nav a:nth-child(3)::before {
+    content: '03. ';
+}
+
+#cabecera #nav a:nth-child(4)::before {
+    content: '04. ';
+}
+
+/* Cambia el color de los números al pasar el cursor */
+#cabecera #nav a:hover::before {
+    color: #00254e; /* Color de los números al pasar el cursor */
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    transition: transform 0.5s ease;
+    padding-left: 10px;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+}
+
+#post {
+    background: #0a192f;
+    padding: 1em;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+    margin-top: 0.5em; /* Ajusta este valor según sea necesario */
+}
+
+.title {
+    text-align: left;
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+.important-text {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.content-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.author-text {
+    text-align: center;
+}
+
+.author {
+    font-size: 12px;
+    opacity: 0.5;
+}
