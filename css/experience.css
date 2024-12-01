@@ -1,0 +1,158 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ffffff;
+}
+
+/* Cabecera */
+#cabecera {
+    background-color: #0a192f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que la cabecera esté sobre el contenido */
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    transition: transform 0.5s ease;
+    padding-left: 10px;
+}
+
+#logo:hover {
+    transform: scale(1.3);
+}
+
+/* Estilo del ícono de flecha */
+/* Estilo del ícono de flecha */
+.arrow-icon {
+    display: inline-block;
+    color: #c4c4c4; /* Color predeterminado */
+    font-size: 18px; /* Tamaño del ícono */
+    margin-left: 10px; /* Espacio entre el texto y la flecha */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animación de color y movimiento */
+}
+
+/* Animación y cambio de color del ícono cuando se pasa el puntero por encima del cuadro */
+.experience-box:hover .arrow-icon {
+    color: #5FA7F5; /* Color azul al pasar el cursor */
+    transform: translate(5px, -5px); /* Animación diagonal hacia arriba y a la derecha */
+}
+
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5FA7F5;
+}
+
+/* Íconos de redes sociales */
+#social-links {
+    display: flex;
+    gap: 15px;
+    padding: 10px 30px;
+}
+
+.social-icon {
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.5; /* Opacidad al 75% */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+/* Contenedor principal */
+#container {
+    padding: 50px;
+}
+
+.section-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Recuadro de experiencia */
+.experience-box {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 60%; /* Ancho más reducido */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Espaciado interno */
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+/* La forma del cuadro aparece al pasar el puntero */
+.experience-box:hover {
+    background-color: #1a2a3a; /* Fondo gris que aparece */
+    transform: scale(1.05)
+}
+
+/* Cambia el color del texto cuando se pasa el puntero */
+.experience-box:hover p strong {
+    color: #5FA7F5; /* Cambia el color del texto */
+}
+
+.experience-box p strong{
+    transition: color 0.3s ease-in-out;
+}
+
+/* Columnas de la experiencia */
+.experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column {
+    flex: 1;
+    opacity: 0.7; /* Opacidad de la fecha */
+    color: #c4c4c4;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.right-column {
+    flex: 3;
+    color: #d1d1d1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.experience-date {
+    font-weight: bold;
+}
+
+.experience-description {
+    line-height: 1.5;
+}

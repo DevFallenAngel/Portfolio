@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/experience.css">
+</head>
+
+<body>
+    <!-- Cabecera con el logo y la barra de navegación -->
+    <div id="cabecera">
+        <img id="logo" src="images/logo.png" alt="Amnesia Haze Logo"
+            style="height: 50px; width: auto; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); transition: transform 0.5s ease; padding-left: 10px;">
+        <nav id="nav">
+            <a href="index.html" class="nav-link">About</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+        </nav>
+        <!-- Contenedor de los íconos de redes sociales -->
+        <div id="social-links" style="margin-top: 10px;">
+            <a href="https://www.linkedin.com/in/juansebsanchez" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin" style="font-size: 24px; color: #ffffff;"></i>
+            </a>
+            <a href="https://www.instagram.com/sebstn77_" target="_blank" class="social-icon">
+                <i class="fab fa-instagram" style="font-size: 24px; color: #ffffff;"></i>
+            </a>
+            <a href="https://github.com/DevFallenAngel" target="_blank" class="social-icon">
+                <i class="fab fa-github" style="font-size: 24px; color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div id="container" style="margin-top: 75px; padding: 0; width: 100%;">
+        <!-- Sección de contenido principal -->
+        <div id="post" style="background: #0a192f; padding: 1em; box-shadow: 0px 2px 20px rgba(0, 0, 0, 1)">
+
+            <h1 class="important-text"
+                style="text-align: center; color: #c4c4c4; font-size: 80px; font-weight: bold; margin-top: 10px; text-shadow: 2px 2px 4px rgba(190, 190, 190, 1)">
+                Experience
+            </h1>
+
+            <!-- Recuadro de experiencia laboral -->
+            <div class="experience-box" onclick="window.location.href='https://www.vendoboletas.com'">
+                <div class="experience-content">
+                    <div class="left-column">
+                        <p class="experience-date">Feb 2023 - Nov 2024</p>
+                    </div>
+                    <div class="right-column">
+                        <p>
+                            <strong>Junior Software Developer · vendoboletas.com</strong>
+                            <!-- Ícono de flecha de redirección -->
+                            <a href="https://www.vendoboletas.com" class="arrow-icon">
+                                <i class="fas fa-link arrow-icon"></i>
+                            </a>
+                        </p>
+                        <p class="experience-description">● Implementación y mantenimiento de APIs RESTful para gestión
+                            de eventos y pagos.<br>
+                            ● Optimización de consultas en bases de datos (PostgreSQL) para mejorar el rendimiento.<br>
+                            ● Resolución de errores en el sistema, aumentando la estabilidad del sitio.<br>
+                            ● Automatización de tareas repetitivas mediante scripts en Python.<br>
+                            ● Colaboración con equipos de frontend para integración de funcionalidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recuadro de experiencia laboral 2 -->
+            <div class="experience-box" onclick="window.location.href='https://www.empresa2.com'">
+                <div class="experience-content">
+                    <div class="left-column">
+                        <p class="experience-date">from - to</p>
+                    </div>
+                    <div class="right-column">
+                        <p class="experience-description">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
